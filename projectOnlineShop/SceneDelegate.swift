@@ -14,24 +14,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-//        let mainViewController = UINavigationController(rootViewController: MainViewController())
-//        let basketViewController = UINavigationController(rootViewController: BasketViewController())
-       
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
         window?.rootViewController = createTabBarController()
         window?.makeKeyAndVisible()
     }
+    
     func createMainViewController() -> UINavigationController {
         let mainViewController = MainViewController()
         mainViewController.title = "Shop"
-        mainViewController.tabBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        mainViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         return UINavigationController(rootViewController: mainViewController)
     }
+    
     func createBasketViewController() -> UINavigationController {
         let basketViewController = BasketViewController()
         basketViewController.title = "Basket"
-        basketViewController.tabBarItem = UITabBarItem(title: "Basket", image: UIImage(systemName: "basket"), selectedImage: UIImage(systemName: "basket.fill"))
+        basketViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "basket"), selectedImage: UIImage(systemName: "basket.fill"))
         return UINavigationController(rootViewController: basketViewController)
     }
     

@@ -13,10 +13,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        let mainViewController = UINavigationController(rootViewController: MainViewController())
+//        let basketViewController = UINavigationController(rootViewController: BasketViewController())
+       
+        window = UIWindow(windowScene: windowScene)
+        window?.windowScene = windowScene
+        window?.rootViewController = createTabBarController()
+        window?.makeKeyAndVisible()
+    }
+    func createMainViewController() -> UINavigationController {
+        let mainViewController = MainViewController()
+        mainViewController.title = "Shop"
+        mainViewController.tabBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        return UINavigationController(rootViewController: mainViewController)
+    }
+    func createBasketViewController() -> UINavigationController {
+        let basketViewController = BasketViewController()
+        basketViewController.title = "Basket"
+        basketViewController.tabBarItem = UITabBarItem(title: "Basket", image: UIImage(systemName: "basket"), selectedImage: UIImage(systemName: "basket.fill"))
+        return UINavigationController(rootViewController: basketViewController)
+    }
+    
+    func createTabBarController() -> UITabBarController {
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [createMainViewController(), createBasketViewController()]
+        return tabBarController
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

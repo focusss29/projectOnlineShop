@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		77169F342A65531000288A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F332A65531000288A9E /* AppDelegate.swift */; };
 		77169F362A65531000288A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F352A65531000288A9E /* SceneDelegate.swift */; };
-		77169F382A65531000288A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F372A65531000288A9E /* ViewController.swift */; };
-		77169F3B2A65531000288A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77169F392A65531000288A9E /* Main.storyboard */; };
 		77169F3E2A65531000288A9E /* projectOnlineShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77169F3C2A65531000288A9E /* projectOnlineShop.xcdatamodeld */; };
 		77169F402A65531100288A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77169F3F2A65531100288A9E /* Assets.xcassets */; };
 		77169F432A65531100288A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77169F412A65531100288A9E /* LaunchScreen.storyboard */; };
 		77169F4E2A65531100288A9E /* projectOnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F4D2A65531100288A9E /* projectOnlineShopTests.swift */; };
 		77169F582A65531100288A9E /* projectOnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F572A65531100288A9E /* projectOnlineShopUITests.swift */; };
 		77169F5A2A65531100288A9E /* projectOnlineShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77169F592A65531100288A9E /* projectOnlineShopUITestsLaunchTests.swift */; };
+		773670F72A65CEEB0018EDA3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 773670F62A65CEEB0018EDA3 /* SnapKit */; };
+		773670F92A65D4660018EDA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773670F82A65D4660018EDA3 /* MainViewController.swift */; };
+		773670FB2A65D4AC0018EDA3 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773670FA2A65D4AC0018EDA3 /* BasketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		77169F302A65531000288A9E /* projectOnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectOnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77169F332A65531000288A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77169F352A65531000288A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77169F372A65531000288A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77169F3A2A65531000288A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77169F3D2A65531000288A9E /* projectOnlineShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = projectOnlineShop.xcdatamodel; sourceTree = "<group>"; };
 		77169F3F2A65531100288A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77169F422A65531100288A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		77169F532A65531100288A9E /* projectOnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectOnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77169F572A65531100288A9E /* projectOnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectOnlineShopUITests.swift; sourceTree = "<group>"; };
 		77169F592A65531100288A9E /* projectOnlineShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectOnlineShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		773670F82A65D4660018EDA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		773670FA2A65D4AC0018EDA3 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773670F72A65CEEB0018EDA3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +105,8 @@
 			children = (
 				77169F332A65531000288A9E /* AppDelegate.swift */,
 				77169F352A65531000288A9E /* SceneDelegate.swift */,
-				77169F372A65531000288A9E /* ViewController.swift */,
-				77169F392A65531000288A9E /* Main.storyboard */,
+				773670F82A65D4660018EDA3 /* MainViewController.swift */,
+				773670FA2A65D4AC0018EDA3 /* BasketViewController.swift */,
 				77169F3F2A65531100288A9E /* Assets.xcassets */,
 				77169F412A65531100288A9E /* LaunchScreen.storyboard */,
 				77169F442A65531100288A9E /* Info.plist */,
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = projectOnlineShop;
+			packageProductDependencies = (
+				773670F62A65CEEB0018EDA3 /* SnapKit */,
+			);
 			productName = projectOnlineShop;
 			productReference = 77169F302A65531000288A9E /* projectOnlineShop.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 77169F272A65531000288A9E;
+			packageReferences = (
+				773670F52A65CEEB0018EDA3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 77169F312A65531000288A9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +244,6 @@
 			files = (
 				77169F432A65531100288A9E /* LaunchScreen.storyboard in Resources */,
 				77169F402A65531100288A9E /* Assets.xcassets in Resources */,
-				77169F3B2A65531000288A9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773670FB2A65D4AC0018EDA3 /* BasketViewController.swift in Sources */,
 				77169F3E2A65531000288A9E /* projectOnlineShop.xcdatamodeld in Sources */,
-				77169F382A65531000288A9E /* ViewController.swift in Sources */,
 				77169F342A65531000288A9E /* AppDelegate.swift in Sources */,
 				77169F362A65531000288A9E /* SceneDelegate.swift in Sources */,
+				773670F92A65D4660018EDA3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		77169F392A65531000288A9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77169F3A2A65531000288A9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77169F412A65531100288A9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,7 +445,6 @@
 				INFOPLIST_FILE = projectOnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +471,6 @@
 				INFOPLIST_FILE = projectOnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		773670F52A65CEEB0018EDA3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		773670F62A65CEEB0018EDA3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 773670F52A65CEEB0018EDA3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		77169F3C2A65531000288A9E /* projectOnlineShop.xcdatamodeld */ = {

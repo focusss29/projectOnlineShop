@@ -10,7 +10,6 @@ import SnapKit
 
 class MainViewController: UIViewController {
     
-    let data = ["Тут будут расположены горячие предложения со скидками", "dsaSasaSAsaSASasaSAsdsadasdas", "iefonfOIENDNIOANDIOANDIONSA"]
     let cellId = "CellID"
     
     let mainCollectionView: UICollectionView = {
@@ -64,7 +63,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MainCollectionViewCell
-        cell.configure(data[indexPath.row], iconCellIndex: indexPath.row)
+        cell.configure(data: data[indexPath.row] )
         return cell
     }
     

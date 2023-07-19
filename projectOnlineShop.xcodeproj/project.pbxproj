@@ -19,6 +19,7 @@
 		773670F92A65D4660018EDA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773670F82A65D4660018EDA3 /* MainViewController.swift */; };
 		773670FB2A65D4AC0018EDA3 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773670FA2A65D4AC0018EDA3 /* BasketViewController.swift */; };
 		773671452A6735DD0018EDA3 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773671442A6735DD0018EDA3 /* MainCollectionViewCell.swift */; };
+		773671472A6833AC0018EDA3 /* ContentForCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773671462A6833AC0018EDA3 /* ContentForCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		773670F82A65D4660018EDA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		773670FA2A65D4AC0018EDA3 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		773671442A6735DD0018EDA3 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		773671462A6833AC0018EDA3 /* ContentForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentForCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				77169F352A65531000288A9E /* SceneDelegate.swift */,
 				773671422A67357C0018EDA3 /* Main + Basket View */,
 				773671432A67359D0018EDA3 /* CollectionViewCell */,
+				773671462A6833AC0018EDA3 /* ContentForCells.swift */,
 				77169F3F2A65531100288A9E /* Assets.xcassets */,
 				77169F412A65531100288A9E /* LaunchScreen.storyboard */,
 				77169F442A65531100288A9E /* Info.plist */,
@@ -291,6 +294,7 @@
 				773671452A6735DD0018EDA3 /* MainCollectionViewCell.swift in Sources */,
 				77169F3E2A65531000288A9E /* projectOnlineShop.xcdatamodeld in Sources */,
 				77169F342A65531000288A9E /* AppDelegate.swift in Sources */,
+				773671472A6833AC0018EDA3 /* ContentForCells.swift in Sources */,
 				77169F362A65531000288A9E /* SceneDelegate.swift in Sources */,
 				773670F92A65D4660018EDA3 /* MainViewController.swift in Sources */,
 			);
@@ -461,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM5MC82G6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = projectOnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -487,6 +492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM5MC82G6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = projectOnlineShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

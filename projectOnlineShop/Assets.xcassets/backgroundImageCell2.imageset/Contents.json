@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Cyberpunk tunnel тоннель киберпанк.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Cyberpunk tunnel тоннель киберпанк 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Cyberpunk tunnel тоннель киберпанк 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

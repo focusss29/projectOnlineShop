@@ -9,35 +9,37 @@ import UIKit
 import SnapKit
 
 class MainCollectionViewCell: UICollectionViewCell {
-    var nameSystemImageCell = ["percent", "flame", "tengesign.circle"]
-    var systemImageMainCell: [UIImage] = []
     
     let textLabel: UILabel = {
             let label = UILabel()
             label.textAlignment = .center
             label.font = UIFont.preferredFont(forTextStyle: .footnote)
             label.numberOfLines = 0
+            label.textColor = .white
+            label.font = UIFont.boldSystemFont(ofSize: 20)
             return label
         }()
     let iconMainCell: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
+        image.tintColor = .white
         return image
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCell()
         makeConstraints()
-        setSystemImage()
+//        setSystemImage()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(_ text: String, iconCellIndex: Int) {
-        textLabel.text = text
-        iconMainCell.image = systemImageMainCell[iconCellIndex]
+    func configure(data: MainCells) {
+        textLabel.text = data.infoCell
+        iconMainCell.image = data.imageCell
+        contentView.backgroundColor = data.backgroundCell
     }
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -49,7 +51,7 @@ private extension MainCollectionViewCell {
         contentView.layer.cornerRadius = 25
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.black.cgColor
-        contentView.backgroundColor = .systemBackground
+//        contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundImageCell1")!)
         
         contentView.addSubview(textLabel)
         contentView.addSubview(iconMainCell)
@@ -59,18 +61,19 @@ private extension MainCollectionViewCell {
     
     func makeConstraints() {
         textLabel.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.center.equalToSuperview()
         }
         iconMainCell.snp.makeConstraints {
+            $0.size.equalTo(25)
             $0.top.equalToSuperview().inset(25)
             $0.left.equalToSuperview().inset(25)
         }
     }
-    func setSystemImage() {
-        for name in nameSystemImageCell {
-            if let image = UIImage(systemName: name) {
-                systemImageMainCell.append(image)
-            }
-        }
-    }
+//    func setSystemImage() {
+//        for name in nameSystemImageCell {
+//            if let image = UIImage(systemName: name) {
+//                systemImageMainCell.append(image)
+//            }
+//        }
+//    }
 }

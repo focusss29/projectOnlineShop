@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createMainViewController() -> UINavigationController {
         let mainViewController = MainViewController()
         mainViewController.title = "Shop"
-        mainViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        mainViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "cart"), selectedImage: UIImage(systemName: "cart.fill"))
         return UINavigationController(rootViewController: mainViewController)
     }
     

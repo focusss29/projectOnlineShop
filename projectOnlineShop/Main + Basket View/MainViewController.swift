@@ -28,6 +28,8 @@ class MainViewController: UIViewController {
         collectionView.horizontalScrollIndicatorInsets = UIEdgeInsets.init(top: 0, left: 100, bottom: 0, right: 100)
         return collectionView
     }()
+    
+    let mainTableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,15 +45,26 @@ private extension MainViewController {
         mainCollectionView.dataSource = self
         mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
-        
+        view.addSubview(mainTableView)
+        mainTableView.backgroundColor = .darkGray
         view.addSubview(mainCollectionView)
     }
     func makeConstraints() {
         mainCollectionView.snp.makeConstraints {
+//            $0.left.right.equalToSuperview().inset(25)
+//            $0.height.equalTo(300)
+//            $0.centerX.equalToSuperview()
+//            $0.centerY.equalToSuperview().offset(-300)
+            
+            $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.left.right.equalToSuperview().inset(25)
-            $0.height.equalTo(300)
-            $0.centerX.equalToSuperview()
-            $0.centerY.equalToSuperview().offset(-300)
+            $0.height.equalTo(150)
+            
+        }
+        mainTableView.snp.makeConstraints {
+            $0.top.equalTo(mainCollectionView.snp.bottom).offset(75)
+            $0.left.right.equalToSuperview().inset(25)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
         
     }

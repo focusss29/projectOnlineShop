@@ -29,7 +29,6 @@ class MainCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         setupCell()
         makeConstraints()
-//        setSystemImage()
     }
     
     required init?(coder: NSCoder) {
@@ -51,7 +50,7 @@ private extension MainCollectionViewCell {
         contentView.layer.cornerRadius = 25
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.black.cgColor
-//        contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundImageCell1")!)
+
         
         contentView.addSubview(textLabel)
         contentView.addSubview(iconMainCell)
@@ -69,11 +68,4 @@ private extension MainCollectionViewCell {
             $0.left.equalToSuperview().inset(25)
         }
     }
-//    func setSystemImage() {
-//        for name in nameSystemImageCell {
-//            if let image = UIImage(systemName: name) {
-//                systemImageMainCell.append(image)
-//            }
-//        }
-//    }
 }
